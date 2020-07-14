@@ -10,14 +10,14 @@
     <h2 class="article-title">{{ object.title }}</h2>
     <p class="article-title">{{ object.content }}</p>
   </div>
-        {% if object.author == user %}
+    {% if object.author == user %}
       <a class="btn btn-secondary btm-sm mt-1 mb-1" href= "{% url 'post_update' object.id %}">
       Update
       </a>
       <a class="btn btn-danger btm-sm mt-1 mb-1" href= "{% url 'post_delete' object.id %}">
       Delete
       </a>
-      {% endif %}
+    {% endif %}
     </div>
 </article>
 
