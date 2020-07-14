@@ -1,6 +1,11 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![django-version]][django]
 
+# Hosted on Heroku
+
+This project is hosted on heroku server. If you would like to take a look visit:
+https://bijeshdjangoblog.herokuapp.com/
+
 # Django Blog
 
 This is a Python Personal Project I did so I can further enhance my concepts in django framework. 
