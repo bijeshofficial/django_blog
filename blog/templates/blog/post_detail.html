@@ -8,7 +8,7 @@
       <a class="mr-2" href="{% url 'user_posts' post.author.username%}">{{ object.author }}</a>
       <small class="text-muted">{{ object.date_posted|date:"M d, Y"}}</small>
     <h2 class="article-title">{{ object.title }}</h2>
-    <p class="article-title">{{ object.content }}</p>
+    <p class="article-title">{{ object.content | truncatewords:30 }}</p>
   </div>
     {% if object.author == user %}
       <a class="btn btn-secondary btm-sm mt-1 mb-1" href= "{% url 'post_update' object.id %}">
